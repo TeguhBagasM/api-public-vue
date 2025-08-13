@@ -4,7 +4,7 @@
       <div class="flex justify-between items-center h-16">
         <!-- Logo/Brand -->
         <div class="flex items-center">
-          <h1 class="text-white text-xl font-bold">Vue Quotes App</h1>
+          <h1 class="text-white text-xl font-bold">Bahara Quotes App</h1>
         </div>
 
         <!-- Desktop Menu -->
@@ -13,24 +13,13 @@
             <button
               @click="setActiveComponent('options')"
               :class="[
-                'px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200',
+                'px-3 py-2 cursor-pointer rounded-md text-sm font-medium transition-colors duration-200',
                 activeComponent === 'options'
                   ? 'bg-blue-700 text-white'
                   : 'text-blue-100 hover:bg-blue-500 hover:text-white',
               ]"
             >
               Options API
-            </button>
-            <button
-              @click="setActiveComponent('composition')"
-              :class="[
-                'px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200',
-                activeComponent === 'composition'
-                  ? 'bg-blue-700 text-white'
-                  : 'text-blue-100 hover:bg-blue-500 hover:text-white',
-              ]"
-            >
-              Composition API
             </button>
           </div>
         </div>
@@ -74,17 +63,6 @@
             ]"
           >
             Options API
-          </button>
-          <button
-            @click="setActiveComponent('composition')"
-            :class="[
-              'block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors duration-200',
-              activeComponent === 'composition'
-                ? 'bg-blue-800 text-white'
-                : 'text-blue-100 hover:bg-blue-600 hover:text-white',
-            ]"
-          >
-            Composition API
           </button>
         </div>
       </div>

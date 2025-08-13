@@ -28,17 +28,6 @@
                 <li>✓ Category filtering</li>
               </ul>
             </div>
-
-            <div class="text-center">
-              <h4 class="font-semibold mb-2">Composition API Features</h4>
-              <ul class="text-sm text-gray-300 space-y-1">
-                <li>✓ Modern Vue 3 approach</li>
-                <li>✓ Better code organization</li>
-                <li>✓ Advanced search & filtering</li>
-                <li>✓ Favorites system</li>
-                <li>✓ Pagination & statistics</li>
-              </ul>
-            </div>
           </div>
 
           <div class="text-sm text-gray-400 border-t border-gray-700 pt-4">

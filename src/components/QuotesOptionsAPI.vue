@@ -13,7 +13,7 @@
           <button
             @click="fetchRandomQuote"
             :disabled="loading"
-            class="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2"
+            class="bg-blue-600 cursor-pointer hover:bg-blue-700 disabled:bg-gray-400 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2"
           >
             <svg v-if="loading" class="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
               <circle
@@ -36,7 +36,7 @@
           <button
             @click="fetchMultipleQuotes"
             :disabled="loading"
-            class="bg-purple-600 hover:bg-purple-700 disabled:bg-gray-400 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+            class="bg-purple-600 cursor-pointer hover:bg-purple-700 disabled:bg-gray-400 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
           >
             Get 5 Quotes
           </button>
@@ -46,7 +46,7 @@
         <select
           v-model="selectedCategory"
           @change="fetchQuotesByCategory"
-          class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="px-4 py-2 border cursor-pointer border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           <option value="">All Categories</option>
           <option value="motivational">Motivational</option>
@@ -99,13 +99,13 @@
           <div class="mt-6 flex justify-center gap-4">
             <button
               @click="copyQuote"
-              class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
+              class="bg-green-600 cursor-pointer hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
             >
               {{ copied ? "Copied!" : "Copy Quote" }}
             </button>
             <button
               @click="shareQuote"
-              class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
+              class="bg-indigo-600 cursor-pointer hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
             >
               Share
             </button>
